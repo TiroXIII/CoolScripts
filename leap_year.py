@@ -6,6 +6,7 @@
 evenly divisible by both 100 and 400"""
 """In addition the script checks if a year is merely evenly divisble by 4 while not being 
 evenly divisible by 100"""
+
 def leap_year(year):
     if year % 4 == 0:
         if year % 100 == 0 and year % 400 == 0:
