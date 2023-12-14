@@ -1,6 +1,6 @@
 # This script takes an input string and creates a rotational cipher based on a key
 # If the string is 'a' and the key is one, a will become b
-# If the string is 'millionaire' and the key is 13, the string will become 'Zvyyvbanver'
+# If the string is 'millionaire' and the key is 13, the string will become 'zyvvbanver'
 
 import re
 def rotate(text, key):
