@@ -9,7 +9,6 @@ def square(number):
     if number not in range(1, 65) or number == None:
         raise ValueError("square must be between 1 and 64")
     result = 2 ** (number - 1)
-    print(result)
     return result
 
 """This function works out the total number of grains accumulated if the process was allowed
@@ -19,5 +18,4 @@ def total():
     for x in range(1, 65):
         number = 2 ** (x - 1)
         sum += number
-    print(sum)
     return (sum)
