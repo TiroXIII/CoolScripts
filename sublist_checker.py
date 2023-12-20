@@ -10,7 +10,6 @@ SUPERLIST = 'SUPERLIST'
 EQUAL = 'EQUAL'
 UNEQUAL = 'UNEQUAL'
 
-
 def sublist(list_one, list_two):
     if list_one == list_two:
         return EQUAL
