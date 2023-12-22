@@ -3,6 +3,8 @@
 # If the string is 'millionaire' and the key is 13, the string will become 'zyvvbanver'
 
 import re
+
+
 def rotate(text, key):
     t = []
     for letter in text:
