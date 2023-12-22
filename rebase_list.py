@@ -17,7 +17,6 @@ def rebase(input_base, digits, output_base):
         added = position * input_base**counter
         counter -= 1
         total += added
-    total
     remainders_list = []
     while total >= 1:
         remainder = total % output_base
