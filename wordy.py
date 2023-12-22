@@ -1,6 +1,8 @@
 import re
-#Problem derived from extreme_startup on Github
-#The script takes a math problem as a string and solves it
+
+
+# Problem derived from extreme_startup on GitHub
+# The script takes a math problem as a string and solves it
 def answer(question):
     if re.search(r'\b(?:cubed|squared|root)\b', question) or re.search(r'\b(?:Who|Where|When|Why)\b', question):
         raise ValueError('unknown operation')
@@ -27,15 +29,15 @@ def answer(question):
             continue
     try:
         result = float(new[0])
-    except ValueError as e:
+    except ValueError:
         raise ValueError('syntax error')
     for i in range(1, len(new), 2):
         operator = new[i]
         try:
             operand = float(new[i + 1])
-        except IndexError as e:
+        except IndexError:
             raise ValueError('syntax error')
-        except ValueError as e:
+        except ValueError:
             raise ValueError('syntax error')
         if operator == '+':
             result += operand
@@ -46,4 +48,3 @@ def answer(question):
         elif operator == '/':
             result /= operand
     return result
-
