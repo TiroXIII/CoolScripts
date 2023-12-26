@@ -29,5 +29,4 @@ def distance(strand_a, strand_b):
         else:
             hamming_count.append(1)
         count += 1
-    print(hamming_count)
     return sum(hamming_count)
